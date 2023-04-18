@@ -11,9 +11,9 @@ function createImages(source, height, width){
 let height = 157;
 let width = 109;
 
-const peasantImg = createImages(imagesSrc("Peasant"), height, width);
-const emperorImg = createImages(imagesSrc("Emperor"), height, width);
-const slaveImg = createImages(imagesSrc("Slave"), height, width);
+const peasantImg = createImages(imagesSrc("Citizen"), height, width);
+const emperorImg = createImages(imagesSrc("Emperor2"), height, width);
+const slaveImg = createImages(imagesSrc("Slave2"), height, width);
 const backCard = createImages(imagesSrc("BackCard"), height, width);
 
 const computerSlots = document.querySelectorAll(".computer-card-slot");
@@ -59,12 +59,12 @@ function startGame(){
 	status = "play";
     let randInt = getRandomInt(2);
     if (randInt == 0){
-        playerSlot = new Deck("Slave");
-        computerSlot = new Deck("Emperor");
+        playerSlot = new Deck("Slave2");
+        computerSlot = new Deck("Emperor2");
         randInt = 1;
     } else {
-        playerSlot = new Deck("Emperor");
-        computerSlot = new Deck("Slave");
+        playerSlot = new Deck("Emperor2");
+        computerSlot = new Deck("Slave2");
         randInt = 0;
     }
     

@@ -1,5 +1,3 @@
-const TYPES = ["Slave", "Peasant", "Emperor"];
-
 export default class Deck{
     constructor(slaveOrEmp){
         var cards = decks(slaveOrEmp);
@@ -25,10 +23,10 @@ class Card{
 }
 
 function decks(slaveOrEmp){
-    var cardS = new Card("Slave"), cardP = new Card("Peasant"), cardE = new Card("Emperor");
+    var cardS = new Card("Slave2"), cardP = new Card("Citizen"), cardE = new Card("Emperor2");
     var deckS = [cardP, cardP, cardS, cardP, cardP];
     var deckE = [cardP, cardP, cardE, cardP, cardP];
-    if (slaveOrEmp === "Slave"){
+    if (slaveOrEmp === "Slave2"){
         return deckS;
     } else {
         return deckE;
